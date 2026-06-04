@@ -33,6 +33,7 @@ tree-sitter-md = { workspace = true, optional = true }
 tree-sitter-python = { workspace = true, optional = true }
 tree-sitter-regex = { workspace = true, optional = true }
 tree-sitter-rust = { workspace = true, optional = true }
+tree-sitter-styled = { workspace = true, optional = true }
 tree-sitter-typescript = { workspace = true, optional = true }
 tree-sitter-yaml = { workspace = true, optional = true }
 
@@ -43,6 +44,7 @@ load-grammars = [
     "tree-sitter-c",
     "tree-sitter-cpp",
     "tree-sitter-css",
+    "tree-sitter-styled",
     "tree-sitter-diff",
     "tree-sitter-gitcommit",
     "tree-sitter-go",
