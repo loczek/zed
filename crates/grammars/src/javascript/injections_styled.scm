@@ -1,5 +1,3 @@
-; TODO: Fix queries that start with `binary_expression` when https://github.com/tree-sitter/tree-sitter-typescript/issues/341 gets fixed
-;
 ; css``, keyframes``, createGlobalStyle``
 (call_expression
   function: (identifier) @_name
