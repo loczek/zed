@@ -12,29 +12,6 @@
 ((regex) @injection.content
   (#set! injection.language "regex"))
 
-(call_expression
-  function: (identifier) @_name
-  (#eq? @_name "css")
-  arguments: (template_string
-    (string_fragment) @injection.content
-    (#set! injection.language "css")))
-
-(call_expression
-  function: (member_expression
-    object: (identifier) @_obj
-    (#eq? @_obj "styled")
-    property: (property_identifier))
-  arguments: (template_string
-    (string_fragment) @injection.content
-    (#set! injection.language "css")))
-
-(call_expression
-  function: (call_expression
-    function: (identifier) @_name
-    (#eq? @_name "styled"))
-  arguments: (template_string
-    (string_fragment) @injection.content
-    (#set! injection.language "css")))
 
 (call_expression
   function: (identifier) @_name
